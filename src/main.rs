@@ -1,3 +1,6 @@
+mod stocks;
+
 fn main() {
-    println!("Hello, world!");
+    println!("{:?}", stocks::Stock::create_random());
+    println!("{:?}", stocks::Stock::create(String::from("THE")));
 }
